@@ -110,6 +110,9 @@ const Home = () => {
                     src={vessel.image}
                     alt={vessel.name}
                     className={styles.image}
+                    width={40}
+                    height={40}
+                    loading="lazy"
                   />
                   <div>
                     <p className={styles.shipName}>{vessel.name}</p>
