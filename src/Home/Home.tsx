@@ -1,4 +1,4 @@
-import styles from "./Home.module.scss";
+import styles from "./home.module.scss"
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { api } from "../services/api";
