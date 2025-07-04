@@ -1,4 +1,3 @@
-import { BiSolidShip } from "react-icons/bi";
 import styles from "./Header.module.scss";
 import { GiShipWheel } from "react-icons/gi";
 import { Link, useNavigate } from "react-router-dom";
