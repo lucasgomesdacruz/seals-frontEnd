@@ -158,6 +158,8 @@ Redirecionamento: após o cadastro simulado, o usuário é redirecionado para a 
 ## 🔐 Rotas protegidas
 
 As rotas internas (`/home`, `/duv/:id`, `/registerduv`) só podem ser acessadas por usuários autenticados. A verificação é feita com um token armazenado em cookie e validado com a API (`/me`).
+![co111de](https://github.com/user-attachments/assets/4e721743-7ead-4669-bcb5-2a85840af493)
+![co1111de](https://github.com/user-attachments/assets/8a8add65-f59e-4055-b94b-f11376806015)
 
 ```tsx
 // src/components/PrivateRoute.tsx
