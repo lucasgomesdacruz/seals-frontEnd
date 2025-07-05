@@ -1,0 +1,45 @@
+.constructionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed #0844C4;
+    border-radius: 10px;
+    width: 100%;
+    height: 100vh; 
+
+    img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .constructionText {
+        margin-top: 10px;
+        font-size: 1.12rem;
+        font-weight: bold;
+        color: black;
+    }
+
+    
+}
+
+@media (max-width: 767px) { 
+    .constructionContainer {
+        
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    
+        .constructionText {
+            font-size: 1rem;
+            text-align: center;
+        }
+    
+    }
+    
+}

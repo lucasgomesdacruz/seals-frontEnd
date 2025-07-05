@@ -5,6 +5,7 @@ import DuvDetails from "./DuvDetails/DuvDetails"
 import Signup from "./signup/Signup"
 import Login from "./longi/Login"
 import RegisterDuv from "./registerDuv/RegisterDuv"
+import NotFound from "./notFound/NotFound"
 
 
 const router = createBrowserRouter([
@@ -30,9 +31,13 @@ const router = createBrowserRouter([
       {
         path: "registerduv",
         element: <RegisterDuv />
-      }
+      },
     ]
-  }
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
 ])
 
 export { router }
