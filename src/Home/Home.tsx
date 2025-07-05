@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { api } from "../services/api";
 import Cookies from "js-cookie";
+import Skeleton from "react-loading-skeleton";
+import SkeletonCard from "../components/loading/SkeletonCard";
 
 type Passenger = {
   id: string;
@@ -70,7 +72,20 @@ const Home = () => {
   }, []);
 
   if (loading) {
-    return <p className={styles.loading}>Carregando dados...</p>;
+    return (
+      <main className={styles.container}>
+        <section className={styles.content}>
+          <Skeleton height={30} width={200} />
+          <Skeleton count={1} width={300} />
+        </section>
+
+        <section className={styles.duvs}>
+          {Array.from({ length: 5 }).map((_, i) => (
+            <SkeletonCard key={i} />
+          ))}
+        </section>
+      </main>
+    );
   }
 
   return (
